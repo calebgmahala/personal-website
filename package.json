@@ -1,0 +1,25 @@
+{
+    "name": "personal-website",
+    "private": true,
+    "version": "1.0.0-beta.1",
+    "description": "Caleb Mahala's personal website and portfolio",
+    "license": "ISC",
+    "author": "Caleb Mahala",
+    "workspaces": [
+        "studio",
+        "web"
+    ],
+    "scripts": {
+        "web": "npm -w web run dev",
+        "web:cypress": "npm -w web run cypress",
+        "web:cypress:test": "npm -w web run cypress run",
+        "web:cypress:test:ct": "npm -w web run cypress run-ct",
+        "web:cypress:test:unit": "npm -w web run cypress run -- --spec cypress/integration/unit/**/*",
+        "studio": "npm -w studio run sanity:start",
+        "generate-types": "npm -w web run generate-types",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "husky": "^7.0.4"
+    }
+}

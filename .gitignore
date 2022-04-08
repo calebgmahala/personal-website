@@ -1,0 +1,28 @@
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# VS Code
+*.code-workspace
+
+# Node
+node_modules
+
+# Environment
+.env*
+!.env.example
+
+# Next
+web/.next
+
+# Sanity
+studio/dist
+
+# Cypress
+**/cypress/screenshots
+**/cypress/videos
+
+# CircleCI
+process.yml

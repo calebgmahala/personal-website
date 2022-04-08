@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Color Variables
+BLUE="\e[1;36m"
+NO_COLOR='\033[0m'
+
+printf "${BLUE}Running linter in web directory${NO_COLOR}"
+npm -w web run 'lint' && \
+printf "${BLUE}Running linter in studio directory${NO_COLOR}"
+npm -w studio run 'lint' && \
+printf "${BLUE}Running unit tests${NO_COLOR}"
+npm run web:cypress:test:unit

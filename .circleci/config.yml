@@ -1,0 +1,18 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
+# We specify a specific executor because the default version of node that comes
+# with the cypress orb does not run the application properly
+executors:
+  node-16:
+    docker:
+      - image: cypress/base:16.14.2
+workflows:
+  build:
+    jobs:
+      - cypress/run:
+          executor: node-16
+          yarn: true
+          build: npm -w web run build
+          start: npm -w web run start
+          command: npm run web:cypress:test && npm run web:cypress:test:ct

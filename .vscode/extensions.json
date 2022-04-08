@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "irongeek.vscode-env",
+    "bradlc.vscode-tailwindcss",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ] 
+}

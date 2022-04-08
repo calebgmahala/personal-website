@@ -1,0 +1,10 @@
+{
+    "video": false,
+    "supportFile": false,
+    "testFiles": "**/*spec.ts",
+    "component": {
+        "componentFolder": "cypress/integration/component",
+        "testFiles": "**/*spec.tsx"
+    }
+      
+}
