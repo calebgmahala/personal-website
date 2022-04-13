@@ -1,8 +1,8 @@
 {
     "name": "personal-website",
     "private": true,
-    "version": "1.0.0-beta.1",
-    "description": "Caleb Mahala's personal website and portfolio",
+    "version": "1.0.0-beta.2",
+    "description": "Caleb Mahala's personal website, portfolio, resume, and art gallary.",
     "license": "ISC",
     "author": "Caleb Mahala",
     "workspaces": [

@@ -171,4 +171,16 @@ This project uses [circleci](https://circleci.com/) for running tests during the
 
 ### Deployments
 
+#### Studio
+
+This project has [express](https://expressjs.com/) set up to point at the Sanity build in the event that you want the sanity server running off of a custom host. To build and start the Sanity project, run the following commands:
+
+```shell
+npm -w studio run <sanity:build|sanity:build:dev>
+npm -w studio run express:build
+npm -w studio run express:start
+```
+
+#### Web
+
 Deployments are not currently set up

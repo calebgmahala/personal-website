@@ -10,7 +10,7 @@ const config: SanityCodegenConfig = {
   babelOptions: {
     ignore: [
       function (filepath) {
-        return /\/node_modules\/(?!@sanity)/.test(filepath)
+        return /\/node_modules\/(?!(@sanity)|(sanity-plugin))/.test(filepath)
       }
     ]
   }
