@@ -5,6 +5,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.formatOnSave": true,
+  "css.customData": [".vscode/css_custom_data.json"],
   "files.associations": {
     "*.env.*": "env"
   }

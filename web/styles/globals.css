@@ -1,0 +1,4 @@
+/* Used to import tailwind into the application */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
