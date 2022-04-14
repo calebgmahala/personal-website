@@ -5,6 +5,7 @@
     },
     "extends": [
         "next/core-web-vitals",
+        "plugin:tailwindcss/recommended",
         "standard"
     ],
     "parser": "@typescript-eslint/parser",
@@ -17,10 +18,13 @@
     },
     "plugins": [
         "react",
+        "tailwindcss",
         "@typescript-eslint"
     ],
     "ignorePatterns": ["lib/sanity/schema.ts", ".next"],
     "rules": {
+        "tailwindcss/no-custom-classname": "off",
+        "tailwindcss/classnames-order": "off",
         "indent": ["warn", 2]
     }
 }

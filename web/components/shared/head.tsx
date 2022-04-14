@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Metadata } from '../../lib/sanity/schema'
 
-function HeadTag ({ metadata }:{ metadata:Metadata }) {
+const HeadTag = ({ metadata }:{ metadata:Metadata }) => {
   const {
     title,
     description,

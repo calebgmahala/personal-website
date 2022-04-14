@@ -3,6 +3,7 @@
 Caleb Mahala's personal website, portfolio, resume, and art gallary.
 
 * Web Framwork: [NEXT.js](https://nextjs.org/)
+* Styles: [Tailwind](https://tailwindcss.com/)
 * Content Management System: [Sanity](https://www.sanity.io/)
 * Testing: [Cypress](https://www.cypress.io/)
 
